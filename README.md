@@ -22,13 +22,14 @@ Copy
 cp .env.example .env
 Abra o arquivo .env e configure as variáveis de ambiente necessárias, como as credenciais do banco de dados:
 
-env
+```env
 Copy
 database.default.hostname = localhost
 database.default.database = [NOME_DO_BANCO]
 database.default.username = [USUARIO_DO_BANCO]
 database.default.password = [SENHA_DO_BANCO]
 database.default.DBDriver = MySQLi
+```
 
 ---
 
@@ -88,4 +89,3 @@ Copy
 http://localhost:8080
 Use as credenciais do usuário padrão para fazer login no sistema.
 
-```
