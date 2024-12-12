@@ -56,8 +56,7 @@ class AuthController extends BaseController
                     'message' => $validation->getErrors(),
                 ]);
             }
-            
-        }else{
+        } else {
             return $this->response->setJSON([
                 'status' => 'error',
                 'message' => $this->request->getMethod(),
@@ -77,7 +76,7 @@ class AuthController extends BaseController
                 $userModel = new UserModel();
                 $email = $this->request->getPost('email');
                 $password = $this->request->getPost('password');
-                
+
                 $user = $userModel->where('email', $email)->first();
                 if ($user && password_verify($password, $user['password'])) {
                     session()->set('user_id', $user['id']);
@@ -101,5 +100,10 @@ class AuthController extends BaseController
                 ]);
             }
         }
+    }
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/login')->with('success', 'Você foi desconectado com sucesso.');
     }
 }

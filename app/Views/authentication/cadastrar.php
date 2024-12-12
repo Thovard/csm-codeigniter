@@ -14,20 +14,20 @@
                             <p class="text-white-50 mb-5">Por favor, preencha as informações para criar uma conta!</p>
                             <form action="/register" method="POST">
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <input type="text" id="typeNameX" name="name" class="form-control form-control-lg" required />
                                     <label class="form-label" for="typeNameX">Nome</label>
+                                    <input type="text" id="typeNameX" name="name" class="form-control form-control-lg" required />
                                 </div>
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
                                     <label class="form-label" for="typeEmailX">Email</label>
+                                    <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
                                 </div>
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" required />
                                     <label class="form-label" for="typePasswordX">Senha</label>
+                                    <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" required />
                                 </div>
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <input type="password" id="typeConfirmPasswordX" name="confirm_password" class="form-control form-control-lg" required />
                                     <label class="form-label" for="typeConfirmPasswordX">Confirmar Senha</label>
+                                    <input type="password" id="typeConfirmPasswordX" name="confirm_password" class="form-control form-control-lg" required />
                                 </div>
                                 <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">Cadastrar</button>
                             </form>

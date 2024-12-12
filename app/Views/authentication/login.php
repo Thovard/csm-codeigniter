@@ -15,13 +15,13 @@
                                 <p class="text-white-50 mb-5">Por favor insira seu login e senha!!</p>
                                 <form action="/login" method="POST">
                                     <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <input type="email" id="typeEmailX" class="form-control form-control-lg" />
                                         <label class="form-label" for="typeEmailX">Email</label>
+                                        <input type="email" id="typeEmailX" class="form-control form-control-lg" />
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                                         <label class="form-label" for="typePasswordX">Senha</label>
+                                        <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                                     </div>
                                     <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="/forgot-password">Esqueceu sua senha?</a></p>
                                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
@@ -29,7 +29,7 @@
                             </div>
 
                             <div>
-                                <p class="mb-0">Não tenho uma conta? <a href="/cadastrar" class="text-white-50 fw-bold">Cadastrar</a></p>
+                                <p class="mb-0">Não tenho uma conta? <a href="/register" class="text-white-50 fw-bold">Cadastrar</a></p>
                                 </p>
                             </div>
                         </div>

@@ -70,9 +70,7 @@ class Filters extends BaseFilters
      * @var array<string, array<string, array<string, string>>>|array<string, list<string>>
      */
     public array $globals = [
-        'before' => [
-            'auth' => ['except' => ['login', 'register', 'forgot-password']],
-        ],
+        'before' => [], 
         'after' => [
             // 'honeypot',
             // 'secureheaders',

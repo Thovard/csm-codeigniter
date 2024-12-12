@@ -41,7 +41,7 @@
                 text: 'Email de recuperação em criação.',
                 confirmButtonText: 'OK'
             }).then(() => {
-                window.location.href = '/';
+                window.location.href = '/login';
             });;
         });
     </script>
