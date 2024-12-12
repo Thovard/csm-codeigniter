@@ -19,9 +19,8 @@ Copie o arquivo .env.example para um novo arquivo chamado .env:
 
 ```bash
 cp .env.example .env
-Abra o arquivo .env e configure as variáveis de ambiente necessárias, como as credenciais do banco de dados:
 ```
-Database: MySQL
+Abra o arquivo .env e configure as variáveis de ambiente necessárias, como as credenciais do banco de dados:
 ```env
 database.default.hostname = localhost
 database.default.database = [NOME_DO_BANCO]
