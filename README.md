@@ -30,6 +30,13 @@ database.default.username = [USUARIO_DO_BANCO]
 database.default.password = [SENHA_DO_BANCO]
 database.default.DBDriver = MySQLi
 ```
+Caso for usar o bando PostgreSQL, altere o driver para PostgreSQL e adicione esses campos:
+```env
+Copy
+database.default.DBDriver = Postgre
+database.tests.charset = utf8
+```
+
 
 ---
 
