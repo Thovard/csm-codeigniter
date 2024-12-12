@@ -17,13 +17,12 @@ cd csm-codeigniter
 2.1. Configurar o Arquivo .env
 Copie o arquivo .env.example para um novo arquivo chamado .env:
 
-bash
-Copy
+```bash
 cp .env.example .env
 Abra o arquivo .env e configure as variáveis de ambiente necessárias, como as credenciais do banco de dados:
-
+```
+Database: MySQL
 ```env
-Copy
 database.default.hostname = localhost
 database.default.database = [NOME_DO_BANCO]
 database.default.username = [USUARIO_DO_BANCO]
@@ -31,8 +30,8 @@ database.default.password = [SENHA_DO_BANCO]
 database.default.DBDriver = MySQLi
 ```
 Caso for usar o bando PostgreSQL, altere o driver para PostgreSQL e adicione esses campos:
+
 ```env
-Copy
 database.default.DBDriver = Postgre
 database.tests.charset = utf8
 ```
@@ -44,7 +43,6 @@ database.tests.charset = utf8
 Certifique-se de ter o Composer instalado. Em seguida, instale as dependências do projeto:
 
 ```bash
-Copy
 composer install
 ```
 
@@ -54,7 +52,6 @@ composer install
 As migrations criam as tabelas necessárias no banco de dados. Execute o comando abaixo para rodar as migrations:
 
 ```bash
-Copy
 php spark migrate
 ```
 
@@ -64,7 +61,6 @@ php spark migrate
 Os seeders populam o banco de dados com dados iniciais. Execute o comando abaixo para rodar os seeders:
 
 ```bash
-Copy
 php spark db:seed DatabaseSeeder
 ```
 
@@ -72,18 +68,17 @@ Usuário Padrão do Sistema
 Após rodar os seeders, o sistema criará um usuário padrão com as seguintes credenciais:
 
 Email: admin@example.com
-
 Senha: admin123
 
 ## **6. Subir o Servidor**
 Inicie o servidor local do CodeIgniter com o comando abaixo:
 
-bash
-Copy
-```php spark serve```
+```bash 
+php spark serve
+```
 Por padrão, o servidor estará disponível em:
 
-```Copy
+```bash
 http://localhost:8080
 ```
 
@@ -92,7 +87,20 @@ http://localhost:8080
 ## **7. Acessar o Sistema**
 Abra o navegador e acesse:
 
-Copy
+```bash
 http://localhost:8080
+```
 Use as credenciais do usuário padrão para fazer login no sistema.
 
+---
+
+## **8. Estrutura do Projeto**
+Controllers: Contém os controladores da aplicação.
+
+Models: Contém os modelos de dados.
+
+Views: Contém as views da aplicação.
+
+Database: Contém as migrations e seeders.
+
+Public: Contém os arquivos públicos (CSS, JS, imagens).
