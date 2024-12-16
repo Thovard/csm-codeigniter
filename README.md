@@ -9,7 +9,7 @@ Este guia explica como configurar e rodar o projeto em seu ambiente local.
 Clone o repositório do projeto para o seu ambiente local:
 
 ```bash
-git clone git@github.com:Thovard/csm-codeigniter.git
+git clone https://github.com/Thovard/csm-codeigniter.git
 cd csm-codeigniter
 ```
 
